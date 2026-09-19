@@ -1,0 +1,55 @@
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+/* 页脚徽标居中 */
+#ghbdages {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* 隐藏页脚框架版本信息 */
+.footer-custom-info, .framework-info {
+  display: none !important;
+}
+
+/* 自定义字体：优设好身体 */
+@font-face {
+  font-family: 'YSHST';
+  src: url('/font/优设好身体.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* 页脚计时器：不用远程 LED 字体，改用系统等宽字体 */
+div#runtime {
+  font-family: Consolas, 'Menlo', 'Courier New', monospace !important;
+  width: auto !important;
+  white-space: nowrap;
+  display: inline-block;
+}
+/* 计时器区域居中 */
+#workboard {
+  text-align: center;
+}
+#workboard .boardsign { display: inline-block; vertical-align: middle; }
+#workboard #runtime { display: inline-block; vertical-align: middle; }
+#workboard .boardsign { display: none !important; }
+
+/* 分页器居中 */
+#pagination {
+  text-align: center;
+}
+#pagination .pagination {
+  justify-content: center;
+}
